@@ -1,6 +1,17 @@
+// See https://www.chaijs.com for how to use Chai.
 import { assert } from 'chai';
-import { solution } from '../src/kata';
+
+import { pigIt } from '../src/kata';
 
 describe('Tests', () => {
-    it('should pass all tests', () => {});
+    it('test', () => {
+        assert.strictEqual(
+            pigIt('Pig latin is cool'),
+            'igPay atinlay siay oolcay'
+        );
+        assert.strictEqual(
+            pigIt('This is my string'),
+            'hisTay siay ymay tringsay'
+        );
+    });
 });
