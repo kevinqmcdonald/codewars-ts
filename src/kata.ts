@@ -1,1 +1,1 @@
-export function solution() {}
+export const convertFrac = (lst: [number, number][]): string => {};
